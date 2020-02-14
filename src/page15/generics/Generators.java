@@ -1,11 +1,12 @@
 package page15.generics;
 
+import net.mindview.util.Generator;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
 import page15.generics.coffee.Coffee;
 import page15.generics.coffee.CoffeeGenerator;
-import page15.generics.net.mindview.util.Generator;
 
 public class Generators {
     public static <T> Collection<T> fill(Collection<T> coll, Generator<T> gen, int n) {
@@ -17,11 +18,14 @@ public class Generators {
 
     public static void main(String[] args) {
         Collection<Coffee> coffees = fill(new ArrayList<Coffee>(), new CoffeeGenerator(), 4);
-        for(Coffee coffee: coffees){
+        for (Coffee coffee : coffees) {
             System.out.println(coffee);
         }
 
-        // funumbers = fill(new ArrayList<Integer>(), new Fiboacc(), 12);
+        Collection<Integer> funumbers = fill(new ArrayList<Integer>(), new Fibonacci(), 12);
+        for (Integer i : funumbers) {
+            System.out.print(i + " ");
+        }
 
     }
 }

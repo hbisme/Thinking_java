@@ -1,5 +1,7 @@
 package page15.generics;
 
+import net.mindview.util.TwoTuple;
+
 class Amphibian {
 }
 
