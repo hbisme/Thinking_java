@@ -1,16 +1,16 @@
 package page21.concurrency;
 
-public class LiffOff implements Runnable {
+public class LiftOff implements Runnable {
 
     protected int countDown = 10;
     private static int taskCount = 0;
     private final int id = taskCount++;
 
-    public LiffOff() {
+    public LiftOff() {
 
     }
 
-    public LiffOff(int countDown) {
+    public LiftOff(int countDown) {
         this.countDown = countDown;
     }
 
@@ -21,7 +21,8 @@ public class LiffOff implements Runnable {
     @Override
     public void run() {
         while (countDown-- > 0) {
-            System.out.print(status());
+            System.out.println(status());
+
             Thread.yield();
         }
     }
