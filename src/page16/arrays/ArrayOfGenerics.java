@@ -2,8 +2,6 @@ package page16.arrays;
 
 import java.util.*;
 
-import page16.BerylliumSphere2;
-
 public class ArrayOfGenerics {
 
     @SuppressWarnings("unchecked")

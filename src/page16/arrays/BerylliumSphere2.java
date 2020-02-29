@@ -1,4 +1,4 @@
-package page16;
+package page16.arrays;
 
 public class BerylliumSphere2 {
     private static long counter;

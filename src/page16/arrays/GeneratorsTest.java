@@ -1,8 +1,7 @@
 package page16.arrays;
 
-
-import page16.net.mindview.util.CountingGenerator;
-import page15.generics.net.mindview.util.Generator;
+import net.mindview.util.CountingGenerator;
+import net.mindview.util.Generator;
 
 public class GeneratorsTest {
     public static int size = 10;
