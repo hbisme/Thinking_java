@@ -33,7 +33,7 @@ public class SerialCtl implements Serializable {
     }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        SerialCtl sc = new SerialCtl("Test1", "Test2");
+        SerialCtl sc = new SerialCtl("Test1", "tmp.Test2");
         System.out.println("Before:\n" + sc);
         ByteArrayOutputStream buf = new ByteArrayOutputStream();
         ObjectOutputStream o = new ObjectOutputStream(buf);

@@ -40,7 +40,7 @@ public class Staff extends ArrayList<Position> {
 
     public static void main(String[] args) {
         Staff staff = new Staff("President", "CTO", "Marketing Manager", "Produt Manager",
-                "Software Engineer", "Software Engineer", "Software Engineer", "Test Engineer", "Technical Writer");
+                "Software Engineer", "Software Engineer", "Software Engineer", "tmp.Test Engineer", "Technical Writer");
         staff.fillPosittion("President", new Person("Me", "Last", "The Top,lonely At"));
         staff.fillPosittion("Project Lead", new Person("Janet", "Planner", "The Burbs"));
         if (staff.positionAvailable("Software Engineer")) {

@@ -28,7 +28,7 @@ class Product {
 
             @Override
             public Product next() {
-                return new Product(rand.nextInt(1000), "Test", rand.nextDouble() * 1000);
+                return new Product(rand.nextInt(1000), "tmp.Test", rand.nextDouble() * 1000);
             }
         };
     }
